@@ -1,7 +1,9 @@
-df <- read.csv("file.CSV",fileEncoding="UTF-8-BOM") #file encoding removed the "ï.. " issue
+#install.packages("janitor") 
+library(janitor)
+df <- read.csv("creep.CSV",fileEncoding="UTF-8-BOM") #file encoding removed the "ï.. " issue
 current <- 1 # variable for current column
-xarr<-yarr<-colorarr<-c() # initialize x ,y, and color vector
-
+xarr<-yarr<-colorarr<-c() # initialize x and y vector
+df<-remove_empty(df, which = c("cols"), quiet = TRUE) # ignore white columns
 for (i in df)
 {
   color <- (colnames(df[current])) # assign column title to color
@@ -21,5 +23,6 @@ for (i in df)
   current <- current+1
 }
 plot(xarr,yarr,col=colorarr,pch=19)
+
 
 
