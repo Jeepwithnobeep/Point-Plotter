@@ -1,6 +1,6 @@
 #install.packages("janitor") 
 library(janitor)
-df <- read.csv("creep.CSV",fileEncoding="UTF-8-BOM") #file encoding removed the "ï.. " issue
+df <- read.csv("file.csv",fileEncoding="UTF-8-BOM") #file encoding removed the "ï.. " issue
 current <- 1 # variable for current column
 xarr<-yarr<-colorarr<-c() # initialize x and y vector
 df<-remove_empty(df, which = c("cols"), quiet = TRUE) # ignore white columns
