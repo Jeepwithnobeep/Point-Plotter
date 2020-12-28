@@ -1,6 +1,5 @@
 # Point-Plotter
-reads a csv file and plots points based on respective color associated with the points
-
+```
 ex csv format:
 RED   BLUE   YELLOW
 3,4   2,3    5,6
@@ -8,7 +7,7 @@ RED   BLUE   YELLOW
 7,8          12,2
 11,2         13,2
       4,3
-      
+```      
       
       
 The code will plot each point as the color of the column
