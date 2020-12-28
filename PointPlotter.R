@@ -2,7 +2,7 @@
 library(janitor)
 df <- read.csv("file.csv",fileEncoding="UTF-8-BOM") #file encoding removed the "ï.. " issue
 current <- 1 # variable for current column
-xarr<-yarr<-colorarr<-c() # initialize x and y vector
+xarr<-yarr<-colorarr<-c() # initialize x ,y, and color vector
 df<-remove_empty(df, which = c("cols"), quiet = TRUE) # ignore white columns
 for (i in df)
 {
