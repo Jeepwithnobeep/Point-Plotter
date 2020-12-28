@@ -10,4 +10,4 @@ RED   BLUE   YELLOW
 ```      
       
       
-The code will plot each point as the color of the column. Spaces betwteen plots don't matter but spaces between columns makes it go BRRR.
+The code will plot each point as the color of the column. Spaces betwteen plots and columns don not matter. 
