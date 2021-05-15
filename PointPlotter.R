@@ -17,10 +17,8 @@ for (i in df)
   {
     p<-strsplit(p,"\\,") # split points apart
     p<-as.numeric(unlist(p)) #convert list to numeric
-    x<-p[1] # get x
-    y<-p[2] # get y
-    xarr<-c(xarr,x) # put x in vector of x points
-    yarr<-c(yarr,y) # put y in vector of y points
+    xarr<-c(xarr,p[1]) # put x in vector of x points
+    yarr<-c(yarr,p[2]) # put y in vector of y points
     colorarr<-c(colorarr,color) # put color in color array
   }
   current <- current+1 # next column
